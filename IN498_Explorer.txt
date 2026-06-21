@@ -1,0 +1,1926 @@
+#########File#########('/content/IN498-Capstone-in-Analytics/retained_installers_com.foo.bar_201904_country_parsed.csv',)
+
+Top 10 Rows()
+
+         Date Package_Name Country  Store_Listing_Visitors  Installers  \
+0  2019/04/01  com.foo.bar      AR                       1           1   
+1  2019/04/01  com.foo.bar      AU                       3           2   
+2  2019/04/01  com.foo.bar      AZ                       1           0   
+3  2019/04/01  com.foo.bar      BR                       1           0   
+4  2019/04/01  com.foo.bar      CA                       5           2   
+5  2019/04/01  com.foo.bar      DE                       4           1   
+6  2019/04/01  com.foo.bar      FR                       2           0   
+7  2019/04/01  com.foo.bar      GB                       3           0   
+8  2019/04/01  com.foo.bar      GH                       1           1   
+9  2019/04/01  com.foo.bar      GR                       1           0   
+
+   Visitor-to-Installer_conversion_rate  Installers_retained_for_1_day  \
+0                                 1.000                              1   
+1                                 0.667                              2   
+2                                 0.000                              0   
+3                                 0.000                              0   
+4                                 0.400                              2   
+5                                 0.250                              1   
+6                                 0.000                              0   
+7                                 0.000                              0   
+8                                 1.000                              1   
+9                                 0.000                              0   
+
+   Installer-to-1_day_retention_rate  Installers_retained_for_7_days  \
+0                                1.0                               1   
+1                                1.0                               2   
+2                                0.0                               0   
+3                                0.0                               0   
+4                                1.0                               2   
+5                                1.0                               1   
+6                                0.0                               0   
+7                                0.0                               0   
+8                                1.0                               1   
+9                                0.0                               0   
+
+   Installer-to-7_days_retention_rate  Installers_retained_for_15_days  \
+0                                 1.0                                1   
+1                                 1.0                                1   
+2                                 0.0                                0   
+3                                 0.0                                0   
+4                                 1.0                                1   
+5                                 1.0                                1   
+6                                 0.0                                0   
+7                                 0.0                                0   
+8                                 1.0                                1   
+9                                 0.0                                0   
+
+   Installer-to-15_days_retention_rate  Installers_retained_for_30_days  \
+0                                  1.0                                0   
+1                                  0.5                                1   
+2                                  0.0                                0   
+3                                  0.0                                0   
+4                                  0.5                                1   
+5                                  1.0                                1   
+6                                  0.0                                0   
+7                                  0.0                                0   
+8                                  1.0                                1   
+9                                  0.0                                0   
+
+   Installer-to-30_days_retention_rate  
+0                                  0.0  
+1                                  0.5  
+2                                  0.0  
+3                                  0.0  
+4                                  0.5  
+5                                  1.0  
+6                                  0.0  
+7                                  0.0  
+8                                  1.0  
+9                                  0.0  ()
+
+Shape()
+
+(889, 14)()
+
+Description()
+
+              Date Package_Name Country  Store_Listing_Visitors  Installers  \
+count          886          889     879              889.000000  889.000000   
+unique          30            1     122                     NaN         NaN   
+top     2019/04/12  com.foo.bar      AU                     NaN         NaN   
+freq            38          889      30                     NaN         NaN   
+mean           NaN          NaN     NaN                9.248594    2.493813   
+std            NaN          NaN     NaN               36.618622   10.804373   
+min            NaN          NaN     NaN                1.000000    0.000000   
+25%            NaN          NaN     NaN                1.000000    0.000000   
+50%            NaN          NaN     NaN                1.000000    0.000000   
+75%            NaN          NaN     NaN                3.000000    1.000000   
+max            NaN          NaN     NaN              260.000000   86.000000   
+
+        Visitor-to-Installer_conversion_rate  Installers_retained_for_1_day  \
+count                             889.000000                     889.000000   
+unique                                   NaN                            NaN   
+top                                      NaN                            NaN   
+freq                                     NaN                            NaN   
+mean                                0.191774                       1.455568   
+std                                 0.325388                       6.495884   
+min                                 0.000000                       0.000000   
+25%                                 0.000000                       0.000000   
+50%                                 0.000000                       0.000000   
+75%                                 0.300000                       0.000000   
+max                                 1.000000                      56.000000   
+
+        Installer-to-1_day_retention_rate  Installers_retained_for_7_days  \
+count                          889.000000                      889.000000   
+unique                                NaN                             NaN   
+top                                   NaN                             NaN   
+freq                                  NaN                             NaN   
+mean                             0.202925                        1.136108   
+std                              0.376229                        5.054047   
+min                              0.000000                        0.000000   
+25%                              0.000000                        0.000000   
+50%                              0.000000                        0.000000   
+75%                              0.000000                        0.000000   
+max                              1.000000                       47.000000   
+
+        Installer-to-7_days_retention_rate  Installers_retained_for_15_days  \
+count                           889.000000                       889.000000   
+unique                                 NaN                              NaN   
+top                                    NaN                              NaN   
+freq                                   NaN                              NaN   
+mean                              0.172025                         0.965129   
+std                               0.350854                         4.342063   
+min                               0.000000                         0.000000   
+25%                               0.000000                         0.000000   
+50%                               0.000000                         0.000000   
+75%                               0.000000                         0.000000   
+max                               1.000000                        40.000000   
+
+        Installer-to-15_days_retention_rate  Installers_retained_for_30_days  \
+count                            889.000000                       889.000000   
+unique                                  NaN                              NaN   
+top                                     NaN                              NaN   
+freq                                    NaN                              NaN   
+mean                               0.143274                         0.809899   
+std                                0.323467                         3.696978   
+min                                0.000000                         0.000000   
+25%                                0.000000                         0.000000   
+50%                                0.000000                         0.000000   
+75%                                0.000000                         0.000000   
+max                                1.000000                        36.000000   
+
+        Installer-to-30_days_retention_rate  
+count                            889.000000  
+unique                                  NaN  
+top                                     NaN  
+freq                                    NaN  
+mean                               0.116143  
+std                                0.291954  
+min                                0.000000  
+25%                                0.000000  
+50%                                0.000000  
+75%                                0.000000  
+max                                1.000000  ()
+
+Counts()
+
+Date                                    886
+Package_Name                            889
+Country                                 879
+Store_Listing_Visitors                  889
+Installers                              889
+Visitor-to-Installer_conversion_rate    889
+Installers_retained_for_1_day           889
+Installer-to-1_day_retention_rate       889
+Installers_retained_for_7_days          889
+Installer-to-7_days_retention_rate      889
+Installers_retained_for_15_days         889
+Installer-to-15_days_retention_rate     889
+Installers_retained_for_30_days         889
+Installer-to-30_days_retention_rate     889
+dtype: int64()
+
+Mean for Installers_retained_for_1_day()
+
+1.455568053993251()
+
+Mode for Installers_retained_for_1_day()
+
+0    0
+Name: Installers_retained_for_1_day, dtype: int64()
+
+Mean for Installers_retained_for_7_days()
+
+1.1361079865016872()
+
+Mode for Installers_retained_for_7_days()
+
+0    0
+Name: Installers_retained_for_7_days, dtype: int64()
+
+Mean for Installers_retained_for_15_days()
+
+0.9651293588301463()
+
+Mode for Installers_retained_for_15_days()
+
+0    0
+Name: Installers_retained_for_15_days, dtype: int64()
+
+Mean for Installers_retained_for_30_days()
+
+0.8098987626546682()
+
+Mode for Installers_retained_for_30_days()
+
+0    0
+Name: Installers_retained_for_30_days, dtype: int64()
+
+#########File#########('/content/IN498-Capstone-in-Analytics/retained_installers_com.foo.bar_201905_country_parsed.csv',)
+
+Top 10 Rows()
+
+         Date Package_Name Country  Store_Listing_Visitors  Installers  \
+0  2019-05-01  com.foo.bar      AF                       1           0   
+1  2019-05-01  com.foo.bar      AT                       1           1   
+2  2019-05-01  com.foo.bar      AU                       8           2   
+3  2019-05-01  com.foo.bar      BD                       1           0   
+4  2019-05-01  com.foo.bar      BR                       1           1   
+5  2019-05-01  com.foo.bar      CA                       8           5   
+6  2019-05-01  com.foo.bar      DE                       2           2   
+7  2019-05-01  com.foo.bar      DZ                       1           0   
+8  2019-05-01  com.foo.bar      EE                       1           1   
+9  2019-05-01  com.foo.bar      EG                       1           0   
+
+   Visitor-to-Installer_conversion_rate  Installers_retained_for_1_day  \
+0                                 0.000                              0   
+1                                 1.000                              1   
+2                                 0.250                              2   
+3                                 0.000                              0   
+4                                 1.000                              1   
+5                                 0.625                              5   
+6                                 1.000                              2   
+7                                 0.000                              0   
+8                                 1.000                              1   
+9                                 0.000                              0   
+
+   Installer-to-1_day_retention_rate  Installers_retained_for_7_days  \
+0                                0.0                               0   
+1                                1.0                               1   
+2                                1.0                               2   
+3                                0.0                               0   
+4                                1.0                               0   
+5                                1.0                               3   
+6                                1.0                               1   
+7                                0.0                               0   
+8                                1.0                               1   
+9                                0.0                               0   
+
+   Installer-to-7_days_retention_rate  Installers_retained_for_15_days  \
+0                                 0.0                                0   
+1                                 1.0                                1   
+2                                 1.0                                2   
+3                                 0.0                                0   
+4                                 0.0                                0   
+5                                 0.6                                3   
+6                                 0.5                                1   
+7                                 0.0                                0   
+8                                 1.0                                1   
+9                                 0.0                                0   
+
+   Installer-to-15_days_retention_rate  Installers_retained_for_30_days  \
+0                                  0.0                              0.0   
+1                                  1.0                              0.0   
+2                                  1.0                              2.0   
+3                                  0.0                              0.0   
+4                                  0.0                              0.0   
+5                                  0.6                              3.0   
+6                                  0.5                              0.0   
+7                                  0.0                              0.0   
+8                                  1.0                              0.0   
+9                                  0.0                              0.0   
+
+   Installer-to-30_days_retention_rate  
+0                                  0.0  
+1                                  0.0  
+2                                  1.0  
+3                                  0.0  
+4                                  0.0  
+5                                  0.6  
+6                                  0.0  
+7                                  0.0  
+8                                  0.0  
+9                                  0.0  ()
+
+Shape()
+
+(895, 14)()
+
+Description()
+
+              Date Package_Name Country  Store_Listing_Visitors  Installers  \
+count          895          895     886              895.000000  895.000000   
+unique          31            1     125                     NaN         NaN   
+top     2019-05-24  com.foo.bar      AU                     NaN         NaN   
+freq            36          895      31                     NaN         NaN   
+mean           NaN          NaN     NaN                8.573184    2.453631   
+std            NaN          NaN     NaN               33.067739   10.320687   
+min            NaN          NaN     NaN                1.000000    0.000000   
+25%            NaN          NaN     NaN                1.000000    0.000000   
+50%            NaN          NaN     NaN                1.000000    0.000000   
+75%            NaN          NaN     NaN                2.000000    1.000000   
+max            NaN          NaN     NaN              221.000000   78.000000   
+
+        Visitor-to-Installer_conversion_rate  Installers_retained_for_1_day  \
+count                             895.000000                     895.000000   
+unique                                   NaN                            NaN   
+top                                      NaN                            NaN   
+freq                                     NaN                            NaN   
+mean                                0.199885                       1.532961   
+std                                 0.333836                       6.537859   
+min                                 0.000000                       0.000000   
+25%                                 0.000000                       0.000000   
+50%                                 0.000000                       0.000000   
+75%                                 0.333000                       0.000000   
+max                                 1.000000                      51.000000   
+
+        Installer-to-1_day_retention_rate  Installers_retained_for_7_days  \
+count                          895.000000                      895.000000   
+unique                                NaN                             NaN   
+top                                   NaN                             NaN   
+freq                                  NaN                             NaN   
+mean                             0.205308                        1.208939   
+std                              0.379284                        5.168733   
+min                              0.000000                        0.000000   
+25%                              0.000000                        0.000000   
+50%                              0.000000                        0.000000   
+75%                              0.000000                        0.000000   
+max                              1.000000                       42.000000   
+
+        Installer-to-7_days_retention_rate  Installers_retained_for_15_days  \
+count                           895.000000                       895.000000   
+unique                                 NaN                              NaN   
+top                                    NaN                              NaN   
+freq                                   NaN                              NaN   
+mean                              0.161371                         1.032402   
+std                               0.337147                         4.416775   
+min                               0.000000                         0.000000   
+25%                               0.000000                         0.000000   
+50%                               0.000000                         0.000000   
+75%                               0.000000                         0.000000   
+max                               1.000000                        35.000000   
+
+        Installer-to-15_days_retention_rate  Installers_retained_for_30_days  \
+count                            895.000000                       892.000000   
+unique                                  NaN                              NaN   
+top                                     NaN                              NaN   
+freq                                    NaN                              NaN   
+mean                               0.133901                         0.862108   
+std                                0.308494                         3.687276   
+min                                0.000000                         0.000000   
+25%                                0.000000                         0.000000   
+50%                                0.000000                         0.000000   
+75%                                0.000000                         0.000000   
+max                                1.000000                        28.000000   
+
+        Installer-to-30_days_retention_rate  
+count                            892.000000  
+unique                                  NaN  
+top                                     NaN  
+freq                                    NaN  
+mean                               0.113965  
+std                                0.284213  
+min                                0.000000  
+25%                                0.000000  
+50%                                0.000000  
+75%                                0.000000  
+max                                1.000000  ()
+
+Counts()
+
+Date                                    895
+Package_Name                            895
+Country                                 886
+Store_Listing_Visitors                  895
+Installers                              895
+Visitor-to-Installer_conversion_rate    895
+Installers_retained_for_1_day           895
+Installer-to-1_day_retention_rate       895
+Installers_retained_for_7_days          895
+Installer-to-7_days_retention_rate      895
+Installers_retained_for_15_days         895
+Installer-to-15_days_retention_rate     895
+Installers_retained_for_30_days         892
+Installer-to-30_days_retention_rate     892
+dtype: int64()
+
+Mean for Installers_retained_for_1_day()
+
+1.5329608938547485()
+
+Mode for Installers_retained_for_1_day()
+
+0    0
+Name: Installers_retained_for_1_day, dtype: int64()
+
+Mean for Installers_retained_for_7_days()
+
+1.2089385474860335()
+
+Mode for Installers_retained_for_7_days()
+
+0    0
+Name: Installers_retained_for_7_days, dtype: int64()
+
+Mean for Installers_retained_for_15_days()
+
+1.0324022346368715()
+
+Mode for Installers_retained_for_15_days()
+
+0    0
+Name: Installers_retained_for_15_days, dtype: int64()
+
+Mean for Installers_retained_for_30_days()
+
+0.8621076233183856()
+
+Mode for Installers_retained_for_30_days()
+
+0    0.0
+Name: Installers_retained_for_30_days, dtype: float64()
+
+#########File#########('/content/IN498-Capstone-in-Analytics/retained_installers_com.foo.bar_201906_country_parsed.csv',)
+
+Top 10 Rows()
+
+         Date Package_Name Country  Store_Listing_Visitors  Installers  \
+0  2019/06/01  com.foo.bar      AT                       2           0   
+1  2019/06/01  com.foo.bar      AU                       3           2   
+2  2019/06/01  com.foo.bar      BR                       1           1   
+3  2019/06/01  com.foo.bar      CA                       7           3   
+4  2019/06/01  com.foo.bar      CY                       1           0   
+5  2019/06/01  com.foo.bar      CZ                       1           1   
+6  2019/06/01  com.foo.bar      DE                       3           1   
+7  2019/06/01  com.foo.bar      FI                       2           2   
+8  2019/06/01  com.foo.bar      FR                       2           1   
+9  2019/06/01  com.foo.bar      GB                       4           1   
+
+   Visitor-to-Installer_conversion_rate  Installers_retained_for_1_day  \
+0                                 0.000                              0   
+1                                 0.667                              2   
+2                                 1.000                              1   
+3                                 0.429                              3   
+4                                 0.000                              0   
+5                                 1.000                              0   
+6                                 0.333                              1   
+7                                 1.000                              2   
+8                                 0.500                              1   
+9                                 0.250                              1   
+
+   Installer-to-1_day_retention_rate  Installers_retained_for_7_days  \
+0                                0.0                               0   
+1                                1.0                               2   
+2                                1.0                               1   
+3                                1.0                               3   
+4                                0.0                               0   
+5                                0.0                               0   
+6                                1.0                               1   
+7                                1.0                               2   
+8                                1.0                               1   
+9                                1.0                               1   
+
+   Installer-to-7_days_retention_rate  Installers_retained_for_15_days  \
+0                                 0.0                                0   
+1                                 1.0                                2   
+2                                 1.0                                1   
+3                                 1.0                                3   
+4                                 0.0                                0   
+5                                 0.0                                0   
+6                                 1.0                                1   
+7                                 1.0                                2   
+8                                 1.0                                1   
+9                                 1.0                                1   
+
+   Installer-to-15_days_retention_rate  Installers_retained_for_30_days  \
+0                                  0.0                                0   
+1                                  1.0                                2   
+2                                  1.0                                1   
+3                                  1.0                                3   
+4                                  0.0                                0   
+5                                  0.0                                0   
+6                                  1.0                                1   
+7                                  1.0                                2   
+8                                  1.0                                1   
+9                                  1.0                                1   
+
+   Installer-to-30_days_retention_rate  
+0                                  0.0  
+1                                  1.0  
+2                                  1.0  
+3                                  1.0  
+4                                  0.0  
+5                                  0.0  
+6                                  1.0  
+7                                  1.0  
+8                                  1.0  
+9                                  1.0  ()
+
+Shape()
+
+(790, 14)()
+
+Description()
+
+              Date Package_Name Country  Store_Listing_Visitors  Installers  \
+count          787          790     780              790.000000  790.000000   
+unique          30            1     109                     NaN         NaN   
+top     2019/06/12  com.foo.bar      AU                     NaN         NaN   
+freq            34          790      30                     NaN         NaN   
+mean           NaN          NaN     NaN                8.751899    2.420253   
+std            NaN          NaN     NaN               32.476829    9.588390   
+min            NaN          NaN     NaN                1.000000    0.000000   
+25%            NaN          NaN     NaN                1.000000    0.000000   
+50%            NaN          NaN     NaN                1.000000    0.000000   
+75%            NaN          NaN     NaN                2.000000    1.000000   
+max            NaN          NaN     NaN              207.000000   65.000000   
+
+        Visitor-to-Installer_conversion_rate  Installers_retained_for_1_day  \
+count                             790.000000                     790.000000   
+unique                                   NaN                            NaN   
+top                                      NaN                            NaN   
+freq                                     NaN                            NaN   
+mean                                0.218919                       1.553165   
+std                                 0.349221                       6.378360   
+min                                 0.000000                       0.000000   
+25%                                 0.000000                       0.000000   
+50%                                 0.000000                       0.000000   
+75%                                 0.333000                       1.000000   
+max                                 1.000000                      46.000000   
+
+        Installer-to-1_day_retention_rate  Installers_retained_for_7_days  \
+count                          790.000000                      790.000000   
+unique                                NaN                             NaN   
+top                                   NaN                             NaN   
+freq                                  NaN                             NaN   
+mean                             0.222390                        1.240506   
+std                              0.388783                        5.117913   
+min                              0.000000                        0.000000   
+25%                              0.000000                        0.000000   
+50%                              0.000000                        0.000000   
+75%                              0.400000                        0.000000   
+max                              1.000000                       35.000000   
+
+        Installer-to-7_days_retention_rate  Installers_retained_for_15_days  \
+count                           790.000000                       790.000000   
+unique                                 NaN                              NaN   
+top                                    NaN                              NaN   
+freq                                   NaN                              NaN   
+mean                              0.177082                         1.065823   
+std                               0.352246                         4.366681   
+min                               0.000000                         0.000000   
+25%                               0.000000                         0.000000   
+50%                               0.000000                         0.000000   
+75%                               0.000000                         0.000000   
+max                               1.000000                        32.000000   
+
+        Installer-to-15_days_retention_rate  Installers_retained_for_30_days  \
+count                            790.000000                       790.000000   
+unique                                  NaN                              NaN   
+top                                     NaN                              NaN   
+freq                                    NaN                              NaN   
+mean                               0.156063                         0.894937   
+std                                0.331810                         3.655348   
+min                                0.000000                         0.000000   
+25%                                0.000000                         0.000000   
+50%                                0.000000                         0.000000   
+75%                                0.000000                         0.000000   
+max                                1.000000                        26.000000   
+
+        Installer-to-30_days_retention_rate  
+count                            790.000000  
+unique                                  NaN  
+top                                     NaN  
+freq                                    NaN  
+mean                               0.135982  
+std                                0.310126  
+min                                0.000000  
+25%                                0.000000  
+50%                                0.000000  
+75%                                0.000000  
+max                                1.000000  ()
+
+Counts()
+
+Date                                    787
+Package_Name                            790
+Country                                 780
+Store_Listing_Visitors                  790
+Installers                              790
+Visitor-to-Installer_conversion_rate    790
+Installers_retained_for_1_day           790
+Installer-to-1_day_retention_rate       790
+Installers_retained_for_7_days          790
+Installer-to-7_days_retention_rate      790
+Installers_retained_for_15_days         790
+Installer-to-15_days_retention_rate     790
+Installers_retained_for_30_days         790
+Installer-to-30_days_retention_rate     790
+dtype: int64()
+
+Mean for Installers_retained_for_1_day()
+
+1.5531645569620254()
+
+Mode for Installers_retained_for_1_day()
+
+0    0
+Name: Installers_retained_for_1_day, dtype: int64()
+
+Mean for Installers_retained_for_7_days()
+
+1.240506329113924()
+
+Mode for Installers_retained_for_7_days()
+
+0    0
+Name: Installers_retained_for_7_days, dtype: int64()
+
+Mean for Installers_retained_for_15_days()
+
+1.0658227848101265()
+
+Mode for Installers_retained_for_15_days()
+
+0    0
+Name: Installers_retained_for_15_days, dtype: int64()
+
+Mean for Installers_retained_for_30_days()
+
+0.8949367088607595()
+
+Mode for Installers_retained_for_30_days()
+
+0    0
+Name: Installers_retained_for_30_days, dtype: int64()
+
+#########File#########('/content/IN498-Capstone-in-Analytics/retained_installers_com.foo.bar_201907_country_parsed.csv',)
+
+Top 10 Rows()
+
+         Date Package_Name Country  Store_Listing_Visitors  Installers  \
+0  2019-07-01  com.foo.bar      AU                       3           1   
+1  2019-07-01  com.foo.bar      BD                       1           1   
+2  2019-07-01  com.foo.bar      BR                       1           0   
+3  2019-07-01  com.foo.bar      CA                       3           0   
+4  2019-07-01  com.foo.bar      DE                       5           1   
+5  2019-07-01  com.foo.bar      FR                       1           0   
+6  2019-07-01  com.foo.bar      GB                       5           1   
+7  2019-07-01  com.foo.bar      GH                       1           0   
+8  2019-07-01  com.foo.bar      HK                       1           0   
+9  2019-07-01  com.foo.bar      IN                      15           3   
+
+   Visitor-to-Installer_conversion_rate  Installers_retained_for_1_day  \
+0                                 0.333                              1   
+1                                 1.000                              1   
+2                                 0.000                              0   
+3                                 0.000                              0   
+4                                 0.200                              1   
+5                                 0.000                              0   
+6                                 0.200                              0   
+7                                 0.000                              0   
+8                                 0.000                              0   
+9                                 0.200                              0   
+
+   Installer-to-1_day_retention_rate  Installers_retained_for_7_days  \
+0                                1.0                               1   
+1                                1.0                               1   
+2                                0.0                               0   
+3                                0.0                               0   
+4                                1.0                               1   
+5                                0.0                               0   
+6                                0.0                               0   
+7                                0.0                               0   
+8                                0.0                               0   
+9                                0.0                               0   
+
+   Installer-to-7_days_retention_rate  Installers_retained_for_15_days  \
+0                                 1.0                                1   
+1                                 1.0                                1   
+2                                 0.0                                0   
+3                                 0.0                                0   
+4                                 1.0                                1   
+5                                 0.0                                0   
+6                                 0.0                                0   
+7                                 0.0                                0   
+8                                 0.0                                0   
+9                                 0.0                                0   
+
+   Installer-to-15_days_retention_rate  Installers_retained_for_30_days  \
+0                                  1.0                              1.0   
+1                                  1.0                              1.0   
+2                                  0.0                              0.0   
+3                                  0.0                              0.0   
+4                                  1.0                              1.0   
+5                                  0.0                              0.0   
+6                                  0.0                              0.0   
+7                                  0.0                              0.0   
+8                                  0.0                              0.0   
+9                                  0.0                              0.0   
+
+   Installer-to-30_days_retention_rate  
+0                                  1.0  
+1                                  1.0  
+2                                  0.0  
+3                                  0.0  
+4                                  1.0  
+5                                  0.0  
+6                                  0.0  
+7                                  0.0  
+8                                  0.0  
+9                                  0.0  ()
+
+Shape()
+
+(727, 14)()
+
+Description()
+
+              Date Package_Name Country  Store_Listing_Visitors  Installers  \
+count          727          727     724              727.000000  727.000000   
+unique          31            1     110                     NaN         NaN   
+top     2019-07-02  com.foo.bar      AU                     NaN         NaN   
+freq            35          727      31                     NaN         NaN   
+mean           NaN          NaN     NaN                9.554333    2.570839   
+std            NaN          NaN     NaN               33.398991    9.588367   
+min            NaN          NaN     NaN                1.000000    0.000000   
+25%            NaN          NaN     NaN                1.000000    0.000000   
+50%            NaN          NaN     NaN                1.000000    0.000000   
+75%            NaN          NaN     NaN                2.000000    1.000000   
+max            NaN          NaN     NaN              196.000000   66.000000   
+
+        Visitor-to-Installer_conversion_rate  Installers_retained_for_1_day  \
+count                             727.000000                     727.000000   
+unique                                   NaN                            NaN   
+top                                      NaN                            NaN   
+freq                                     NaN                            NaN   
+mean                                0.222689                       1.453920   
+std                                 0.353605                       5.711161   
+min                                 0.000000                       0.000000   
+25%                                 0.000000                       0.000000   
+50%                                 0.000000                       0.000000   
+75%                                 0.333000                       1.000000   
+max                                 1.000000                      42.000000   
+
+        Installer-to-1_day_retention_rate  Installers_retained_for_7_days  \
+count                          727.000000                      727.000000   
+unique                                NaN                             NaN   
+top                                   NaN                             NaN   
+freq                                  NaN                             NaN   
+mean                             0.211582                        1.103164   
+std                              0.380969                        4.446694   
+min                              0.000000                        0.000000   
+25%                              0.000000                        0.000000   
+50%                              0.000000                        0.000000   
+75%                              0.250000                        0.000000   
+max                              1.000000                       38.000000   
+
+        Installer-to-7_days_retention_rate  Installers_retained_for_15_days  \
+count                           727.000000                       727.000000   
+unique                                 NaN                              NaN   
+top                                    NaN                              NaN   
+freq                                   NaN                              NaN   
+mean                              0.163116                         0.946355   
+std                               0.341204                         3.809678   
+min                               0.000000                         0.000000   
+25%                               0.000000                         0.000000   
+50%                               0.000000                         0.000000   
+75%                               0.000000                         0.000000   
+max                               1.000000                        31.000000   
+
+        Installer-to-15_days_retention_rate  Installers_retained_for_30_days  \
+count                            727.000000                       722.000000   
+unique                                  NaN                              NaN   
+top                                     NaN                              NaN   
+freq                                    NaN                              NaN   
+mean                               0.145209                         0.814404   
+std                                0.323930                         3.272872   
+min                                0.000000                         0.000000   
+25%                                0.000000                         0.000000   
+50%                                0.000000                         0.000000   
+75%                                0.000000                         0.000000   
+max                                1.000000                        26.000000   
+
+        Installer-to-30_days_retention_rate  
+count                            722.000000  
+unique                                  NaN  
+top                                     NaN  
+freq                                    NaN  
+mean                               0.124967  
+std                                0.302476  
+min                                0.000000  
+25%                                0.000000  
+50%                                0.000000  
+75%                                0.000000  
+max                                1.000000  ()
+
+Counts()
+
+Date                                    727
+Package_Name                            727
+Country                                 724
+Store_Listing_Visitors                  727
+Installers                              727
+Visitor-to-Installer_conversion_rate    727
+Installers_retained_for_1_day           727
+Installer-to-1_day_retention_rate       727
+Installers_retained_for_7_days          727
+Installer-to-7_days_retention_rate      727
+Installers_retained_for_15_days         727
+Installer-to-15_days_retention_rate     727
+Installers_retained_for_30_days         722
+Installer-to-30_days_retention_rate     722
+dtype: int64()
+
+Mean for Installers_retained_for_1_day()
+
+1.453920220082531()
+
+Mode for Installers_retained_for_1_day()
+
+0    0
+Name: Installers_retained_for_1_day, dtype: int64()
+
+Mean for Installers_retained_for_7_days()
+
+1.1031636863823935()
+
+Mode for Installers_retained_for_7_days()
+
+0    0
+Name: Installers_retained_for_7_days, dtype: int64()
+
+Mean for Installers_retained_for_15_days()
+
+0.9463548830811555()
+
+Mode for Installers_retained_for_15_days()
+
+0    0
+Name: Installers_retained_for_15_days, dtype: int64()
+
+Mean for Installers_retained_for_30_days()
+
+0.814404432132964()
+
+Mode for Installers_retained_for_30_days()
+
+0    0.0
+Name: Installers_retained_for_30_days, dtype: float64()
+
+#########File#########('/content/IN498-Capstone-in-Analytics/retained_installers_com.foo.bar_201908_country_parsed.csv',)
+
+Top 10 Rows()
+
+         Date Package_Name Country  Store_Listing_Visitors  Installers  \
+0  2019/08/01  com.foo.bar      AE                       1           0   
+1  2019/08/01  com.foo.bar      AT                       1           1   
+2  2019/08/01  com.foo.bar      AU                       5           1   
+3  2019/08/01  com.foo.bar      BE                       1           0   
+4  2019/08/01  com.foo.bar      BR                       1           0   
+5  2019/08/01  com.foo.bar      CA                       6           3   
+6  2019/08/01  com.foo.bar      CL                       1           0   
+7  2019/08/01  com.foo.bar      DE                       4           0   
+8  2019/08/01  com.foo.bar      ES                       1           0   
+9  2019/08/01  com.foo.bar      FI                       1           0   
+
+   Visitor-to-Installer_conversion_rate  Installers_retained_for_1_day  \
+0                                   0.0                              0   
+1                                   1.0                              0   
+2                                   0.2                              1   
+3                                   0.0                              0   
+4                                   0.0                              0   
+5                                   0.5                              2   
+6                                   0.0                              0   
+7                                   0.0                              0   
+8                                   0.0                              0   
+9                                   0.0                              0   
+
+   Installer-to-1_day_retention_rate  Installers_retained_for_7_days  \
+0                              0.000                               0   
+1                              0.000                               0   
+2                              1.000                               1   
+3                              0.000                               0   
+4                              0.000                               0   
+5                              0.667                               2   
+6                              0.000                               0   
+7                              0.000                               0   
+8                              0.000                               0   
+9                              0.000                               0   
+
+   Installer-to-7_days_retention_rate  Installers_retained_for_15_days  \
+0                               0.000                                0   
+1                               0.000                                0   
+2                               1.000                                1   
+3                               0.000                                0   
+4                               0.000                                0   
+5                               0.667                                2   
+6                               0.000                                0   
+7                               0.000                                0   
+8                               0.000                                0   
+9                               0.000                                0   
+
+   Installer-to-15_days_retention_rate  Installers_retained_for_30_days  \
+0                                0.000                                0   
+1                                0.000                                0   
+2                                1.000                                1   
+3                                0.000                                0   
+4                                0.000                                0   
+5                                0.667                                1   
+6                                0.000                                0   
+7                                0.000                                0   
+8                                0.000                                0   
+9                                0.000                                0   
+
+   Installer-to-30_days_retention_rate  
+0                                0.000  
+1                                0.000  
+2                                1.000  
+3                                0.000  
+4                                0.000  
+5                                0.333  
+6                                0.000  
+7                                0.000  
+8                                0.000  
+9                                0.000  ()
+
+Shape()
+
+(778, 14)()
+
+Description()
+
+              Date Package_Name Country  Store_Listing_Visitors  Installers  \
+count          775          778     768              778.000000  778.000000   
+unique          31            1     118                     NaN         NaN   
+top     2019/08/15  com.foo.bar      CA                     NaN         NaN   
+freq            32          778      31                     NaN         NaN   
+mean           NaN          NaN     NaN                9.616967    2.776350   
+std            NaN          NaN     NaN               36.737545   11.208167   
+min            NaN          NaN     NaN                0.000000    0.000000   
+25%            NaN          NaN     NaN                1.000000    0.000000   
+50%            NaN          NaN     NaN                1.000000    0.000000   
+75%            NaN          NaN     NaN                2.000000    1.000000   
+max            NaN          NaN     NaN              248.000000   87.000000   
+
+        Visitor-to-Installer_conversion_rate  Installers_retained_for_1_day  \
+count                             778.000000                     778.000000   
+unique                                   NaN                            NaN   
+top                                      NaN                            NaN   
+freq                                     NaN                            NaN   
+mean                                0.219949                       1.551414   
+std                                 0.357842                       6.590079   
+min                                 0.000000                       0.000000   
+25%                                 0.000000                       0.000000   
+50%                                 0.000000                       0.000000   
+75%                                 0.333000                       0.000000   
+max                                 1.000000                      51.000000   
+
+        Installer-to-1_day_retention_rate  Installers_retained_for_7_days  \
+count                          778.000000                      778.000000   
+unique                                NaN                             NaN   
+top                                   NaN                             NaN   
+freq                                  NaN                             NaN   
+mean                             0.198094                        1.199229   
+std                              0.375248                        5.131491   
+min                              0.000000                        0.000000   
+25%                              0.000000                        0.000000   
+50%                              0.000000                        0.000000   
+75%                              0.000000                        0.000000   
+max                              1.000000                       41.000000   
+
+        Installer-to-7_days_retention_rate  Installers_retained_for_15_days  \
+count                           778.000000                       778.000000   
+unique                                 NaN                              NaN   
+top                                    NaN                              NaN   
+freq                                   NaN                              NaN   
+mean                              0.155208                         1.039846   
+std                               0.336566                         4.486468   
+min                               0.000000                         0.000000   
+25%                               0.000000                         0.000000   
+50%                               0.000000                         0.000000   
+75%                               0.000000                         0.000000   
+max                               1.000000                        38.000000   
+
+        Installer-to-15_days_retention_rate  Installers_retained_for_30_days  \
+count                            778.000000                       778.000000   
+unique                                  NaN                              NaN   
+top                                     NaN                              NaN   
+freq                                    NaN                              NaN   
+mean                               0.134239                         0.858612   
+std                                0.314696                         3.746203   
+min                                0.000000                         0.000000   
+25%                                0.000000                         0.000000   
+50%                                0.000000                         0.000000   
+75%                                0.000000                         0.000000   
+max                                1.000000                        31.000000   
+
+        Installer-to-30_days_retention_rate  
+count                            778.000000  
+unique                                  NaN  
+top                                     NaN  
+freq                                    NaN  
+mean                               0.110620  
+std                                0.287793  
+min                                0.000000  
+25%                                0.000000  
+50%                                0.000000  
+75%                                0.000000  
+max                                1.000000  ()
+
+Counts()
+
+Date                                    775
+Package_Name                            778
+Country                                 768
+Store_Listing_Visitors                  778
+Installers                              778
+Visitor-to-Installer_conversion_rate    778
+Installers_retained_for_1_day           778
+Installer-to-1_day_retention_rate       778
+Installers_retained_for_7_days          778
+Installer-to-7_days_retention_rate      778
+Installers_retained_for_15_days         778
+Installer-to-15_days_retention_rate     778
+Installers_retained_for_30_days         778
+Installer-to-30_days_retention_rate     778
+dtype: int64()
+
+Mean for Installers_retained_for_1_day()
+
+1.551413881748072()
+
+Mode for Installers_retained_for_1_day()
+
+0    0
+Name: Installers_retained_for_1_day, dtype: int64()
+
+Mean for Installers_retained_for_7_days()
+
+1.199228791773779()
+
+Mode for Installers_retained_for_7_days()
+
+0    0
+Name: Installers_retained_for_7_days, dtype: int64()
+
+Mean for Installers_retained_for_15_days()
+
+1.0398457583547558()
+
+Mode for Installers_retained_for_15_days()
+
+0    0
+Name: Installers_retained_for_15_days, dtype: int64()
+
+Mean for Installers_retained_for_30_days()
+
+0.8586118251928021()
+
+Mode for Installers_retained_for_30_days()
+
+0    0
+Name: Installers_retained_for_30_days, dtype: int64()
+
+#########File#########('/content/IN498-Capstone-in-Analytics/retained_installers_com.foo.bar_201909_country_parsed.csv',)
+
+Top 10 Rows()
+
+         Date Package_Name Country  Store_Listing_Visitors  Installers  \
+0  2019-09-01  com.foo.bar      AR                       1           0   
+1  2019-09-01  com.foo.bar      AU                       2           0   
+2  2019-09-01  com.foo.bar      CA                       6           0   
+3  2019-09-01  com.foo.bar      DE                       5           0   
+4  2019-09-01  com.foo.bar      EG                       1           0   
+5  2019-09-01  com.foo.bar      GB                       1           0   
+6  2019-09-01  com.foo.bar      IE                       1           0   
+7  2019-09-01  com.foo.bar      IL                       1           0   
+8  2019-09-01  com.foo.bar      IN                       9           0   
+9  2019-09-01  com.foo.bar     NaN                       1           1   
+
+   Visitor-to-Installer_conversion_rate  Installers_retained_for_1_day  \
+0                                   0.0                              0   
+1                                   0.0                              0   
+2                                   0.0                              1   
+3                                   0.0                              0   
+4                                   0.0                              0   
+5                                   0.0                              0   
+6                                   0.0                              1   
+7                                   0.0                              0   
+8                                   0.0                              0   
+9                                   1.0                              0   
+
+   Installer-to-1_day_retention_rate  Installers_retained_for_7_days  \
+0                                0.0                               0   
+1                                0.0                               0   
+2                                0.0                               1   
+3                                0.0                               0   
+4                                0.0                               0   
+5                                0.0                               0   
+6                                0.0                               0   
+7                                0.0                               0   
+8                                0.0                               0   
+9                                0.0                               0   
+
+   Installer-to-7_days_retention_rate  Installers_retained_for_15_days  \
+0                                 0.0                                0   
+1                                 0.0                                0   
+2                                 0.0                                1   
+3                                 0.0                                0   
+4                                 0.0                                0   
+5                                 0.0                                0   
+6                                 0.0                                0   
+7                                 0.0                                0   
+8                                 0.0                                0   
+9                                 0.0                                0   
+
+   Installer-to-15_days_retention_rate  Installers_retained_for_30_days  \
+0                                  0.0                                0   
+1                                  0.0                                0   
+2                                  0.0                                1   
+3                                  0.0                                0   
+4                                  0.0                                0   
+5                                  0.0                                0   
+6                                  0.0                                0   
+7                                  0.0                                0   
+8                                  0.0                                0   
+9                                  0.0                                0   
+
+   Installer-to-30_days_retention_rate  
+0                                  0.0  
+1                                  0.0  
+2                                  0.0  
+3                                  0.0  
+4                                  0.0  
+5                                  0.0  
+6                                  0.0  
+7                                  0.0  
+8                                  0.0  
+9                                  0.0  ()
+
+Shape()
+
+(560, 14)()
+
+Description()
+
+              Date Package_Name Country  Store_Listing_Visitors  Installers  \
+count          560          560     554              560.000000  560.000000   
+unique          30            1      93                     NaN         NaN   
+top     2019-09-12  com.foo.bar      IN                     NaN         NaN   
+freq            28          560      30                     NaN         NaN   
+mean           NaN          NaN     NaN                6.467857    2.025000   
+std            NaN          NaN     NaN               20.477547    7.175995   
+min            NaN          NaN     NaN                1.000000    0.000000   
+25%            NaN          NaN     NaN                1.000000    0.000000   
+50%            NaN          NaN     NaN                1.000000    0.000000   
+75%            NaN          NaN     NaN                2.000000    1.000000   
+max            NaN          NaN     NaN              133.000000   46.000000   
+
+        Visitor-to-Installer_conversion_rate  Installers_retained_for_1_day  \
+count                             560.000000                     560.000000   
+unique                                   NaN                            NaN   
+top                                      NaN                            NaN   
+freq                                     NaN                            NaN   
+mean                                0.208359                       1.362500   
+std                                 0.347384                       5.053809   
+min                                 0.000000                       0.000000   
+25%                                 0.000000                       0.000000   
+50%                                 0.000000                       0.000000   
+75%                                 0.333000                       0.000000   
+max                                 1.000000                      41.000000   
+
+        Installer-to-1_day_retention_rate  Installers_retained_for_7_days  \
+count                          560.000000                      560.000000   
+unique                                NaN                             NaN   
+top                                   NaN                             NaN   
+freq                                  NaN                             NaN   
+mean                             0.196039                        1.108929   
+std                              0.373376                        4.138989   
+min                              0.000000                        0.000000   
+25%                              0.000000                        0.000000   
+50%                              0.000000                        0.000000   
+75%                              0.000000                        0.000000   
+max                              1.000000                       32.000000   
+
+        Installer-to-7_days_retention_rate  Installers_retained_for_15_days  \
+count                           560.000000                       560.000000   
+unique                                 NaN                              NaN   
+top                                    NaN                              NaN   
+freq                                   NaN                              NaN   
+mean                              0.160961                         0.982143   
+std                               0.339534                         3.757359   
+min                               0.000000                         0.000000   
+25%                               0.000000                         0.000000   
+50%                               0.000000                         0.000000   
+75%                               0.000000                         0.000000   
+max                               1.000000                        30.000000   
+
+        Installer-to-15_days_retention_rate  Installers_retained_for_30_days  \
+count                            560.000000                       560.000000   
+unique                                  NaN                              NaN   
+top                                     NaN                              NaN   
+freq                                    NaN                              NaN   
+mean                               0.133350                         0.839286   
+std                                0.307369                         3.249752   
+min                                0.000000                         0.000000   
+25%                                0.000000                         0.000000   
+50%                                0.000000                         0.000000   
+75%                                0.000000                         0.000000   
+max                                1.000000                        27.000000   
+
+        Installer-to-30_days_retention_rate  
+count                            560.000000  
+unique                                  NaN  
+top                                     NaN  
+freq                                    NaN  
+mean                               0.112170  
+std                                0.281364  
+min                                0.000000  
+25%                                0.000000  
+50%                                0.000000  
+75%                                0.000000  
+max                                1.000000  ()
+
+Counts()
+
+Date                                    560
+Package_Name                            560
+Country                                 554
+Store_Listing_Visitors                  560
+Installers                              560
+Visitor-to-Installer_conversion_rate    560
+Installers_retained_for_1_day           560
+Installer-to-1_day_retention_rate       560
+Installers_retained_for_7_days          560
+Installer-to-7_days_retention_rate      560
+Installers_retained_for_15_days         560
+Installer-to-15_days_retention_rate     560
+Installers_retained_for_30_days         560
+Installer-to-30_days_retention_rate     560
+dtype: int64()
+
+Mean for Installers_retained_for_1_day()
+
+1.3625()
+
+Mode for Installers_retained_for_1_day()
+
+0    0
+Name: Installers_retained_for_1_day, dtype: int64()
+
+Mean for Installers_retained_for_7_days()
+
+1.1089285714285715()
+
+Mode for Installers_retained_for_7_days()
+
+0    0
+Name: Installers_retained_for_7_days, dtype: int64()
+
+Mean for Installers_retained_for_15_days()
+
+0.9821428571428571()
+
+Mode for Installers_retained_for_15_days()
+
+0    0
+Name: Installers_retained_for_15_days, dtype: int64()
+
+Mean for Installers_retained_for_30_days()
+
+0.8392857142857143()
+
+Mode for Installers_retained_for_30_days()
+
+0    0
+Name: Installers_retained_for_30_days, dtype: int64()
+
+#########File#########('/content/IN498-Capstone-in-Analytics/retained_installers_com.foo.bar_201910_country_parsed.csv',)
+
+Top 10 Rows()
+
+         Date Package_Name Country  Store_Listing_Visitors  Installers  \
+0  2019/10/01  com.foo.bar      AU                       2           1   
+1  2019/10/01  com.foo.bar      BD                       1           0   
+2  2019/10/01  com.foo.bar      CA                       1           0   
+3  2019/10/01  com.foo.bar      DE                       1           1   
+4  2019/10/01  com.foo.bar      FI                       1           0   
+5  2019/10/01  com.foo.bar      GB                       2           0   
+6  2019/10/01  com.foo.bar      GE                       1           0   
+7  2019/10/01  com.foo.bar      ID                       1           0   
+8  2019/10/01  com.foo.bar      IE                       1           0   
+9  2019/10/01  com.foo.bar      IN                       7           3   
+
+   Visitor-to-Installer_conversion_rate  Installers_retained_for_1_day  \
+0                                 0.500                              1   
+1                                 0.000                              0   
+2                                 0.000                              0   
+3                                 1.000                              0   
+4                                 0.000                              0   
+5                                 0.000                              0   
+6                                 0.000                              0   
+7                                 0.000                              0   
+8                                 0.000                              0   
+9                                 0.429                              1   
+
+   Installer-to-1_day_retention_rate  Installers_retained_for_7_days  \
+0                              1.000                               1   
+1                              0.000                               0   
+2                              0.000                               0   
+3                              0.000                               0   
+4                              0.000                               0   
+5                              0.000                               0   
+6                              0.000                               0   
+7                              0.000                               0   
+8                              0.000                               0   
+9                              0.333                               0   
+
+   Installer-to-7_days_retention_rate  Installers_retained_for_15_days  \
+0                                 1.0                                1   
+1                                 0.0                                0   
+2                                 0.0                                0   
+3                                 0.0                                0   
+4                                 0.0                                0   
+5                                 0.0                                0   
+6                                 0.0                                0   
+7                                 0.0                                0   
+8                                 0.0                                0   
+9                                 0.0                                0   
+
+   Installer-to-15_days_retention_rate  Installers_retained_for_30_days  \
+0                                  1.0                                1   
+1                                  0.0                                0   
+2                                  0.0                                0   
+3                                  0.0                                0   
+4                                  0.0                                0   
+5                                  0.0                                0   
+6                                  0.0                                0   
+7                                  0.0                                0   
+8                                  0.0                                0   
+9                                  0.0                                0   
+
+   Installer-to-30_days_retention_rate  
+0                                  1.0  
+1                                  0.0  
+2                                  0.0  
+3                                  0.0  
+4                                  0.0  
+5                                  0.0  
+6                                  0.0  
+7                                  0.0  
+8                                  0.0  
+9                                  0.0  ()
+
+Shape()
+
+(582, 14)()
+
+Description()
+
+              Date Package_Name Country  Store_Listing_Visitors  Installers  \
+count          580          582     581              582.000000  582.000000   
+unique          31            1      94                     NaN         NaN   
+top     2019/10/18  com.foo.bar      IN                     NaN         NaN   
+freq            28          582      31                     NaN         NaN   
+mean           NaN          NaN     NaN                8.300687    3.084192   
+std            NaN          NaN     NaN               28.744239   14.132814   
+min            NaN          NaN     NaN                1.000000    0.000000   
+25%            NaN          NaN     NaN                1.000000    0.000000   
+50%            NaN          NaN     NaN                1.000000    0.000000   
+75%            NaN          NaN     NaN                2.000000    1.000000   
+max            NaN          NaN     NaN              354.000000  238.000000   
+
+        Visitor-to-Installer_conversion_rate  Installers_retained_for_1_day  \
+count                             582.000000                     582.000000   
+unique                                   NaN                            NaN   
+top                                      NaN                            NaN   
+freq                                     NaN                            NaN   
+mean                                0.277120                       1.810997   
+std                                 0.381572                       7.074379   
+min                                 0.000000                       0.000000   
+25%                                 0.000000                       0.000000   
+50%                                 0.000000                       0.000000   
+75%                                 0.500000                       1.000000   
+max                                 1.000000                      93.000000   
+
+        Installer-to-1_day_retention_rate  Installers_retained_for_7_days  \
+count                          582.000000                      582.000000   
+unique                                NaN                             NaN   
+top                                   NaN                             NaN   
+freq                                  NaN                             NaN   
+mean                             0.247438                        1.386598   
+std                              0.402168                        5.020443   
+min                              0.000000                        0.000000   
+25%                              0.000000                        0.000000   
+50%                              0.000000                        0.000000   
+75%                              0.511250                        1.000000   
+max                              1.000000                       51.000000   
+
+        Installer-to-7_days_retention_rate  Installers_retained_for_15_days  \
+count                           582.000000                       582.000000   
+unique                                 NaN                              NaN   
+top                                    NaN                              NaN   
+freq                                   NaN                              NaN   
+mean                              0.203019                         1.201031   
+std                               0.367825                         4.317733   
+min                               0.000000                         0.000000   
+25%                               0.000000                         0.000000   
+50%                               0.000000                         0.000000   
+75%                               0.250000                         0.000000   
+max                               1.000000                        41.000000   
+
+        Installer-to-15_days_retention_rate  Installers_retained_for_30_days  \
+count                            582.000000                       582.000000   
+unique                                  NaN                              NaN   
+top                                     NaN                              NaN   
+freq                                    NaN                              NaN   
+mean                               0.175986                         1.030928   
+std                                0.346423                         3.662022   
+min                                0.000000                         0.000000   
+25%                                0.000000                         0.000000   
+50%                                0.000000                         0.000000   
+75%                                0.000000                         0.000000   
+max                                1.000000                        30.000000   
+
+        Installer-to-30_days_retention_rate  
+count                            582.000000  
+unique                                  NaN  
+top                                     NaN  
+freq                                    NaN  
+mean                               0.152981  
+std                                0.323651  
+min                                0.000000  
+25%                                0.000000  
+50%                                0.000000  
+75%                                0.000000  
+max                                1.000000  ()
+
+Counts()
+
+Date                                    580
+Package_Name                            582
+Country                                 581
+Store_Listing_Visitors                  582
+Installers                              582
+Visitor-to-Installer_conversion_rate    582
+Installers_retained_for_1_day           582
+Installer-to-1_day_retention_rate       582
+Installers_retained_for_7_days          582
+Installer-to-7_days_retention_rate      582
+Installers_retained_for_15_days         582
+Installer-to-15_days_retention_rate     582
+Installers_retained_for_30_days         582
+Installer-to-30_days_retention_rate     582
+dtype: int64()
+
+Mean for Installers_retained_for_1_day()
+
+1.8109965635738832()
+
+Mode for Installers_retained_for_1_day()
+
+0    0
+Name: Installers_retained_for_1_day, dtype: int64()
+
+Mean for Installers_retained_for_7_days()
+
+1.3865979381443299()
+
+Mode for Installers_retained_for_7_days()
+
+0    0
+Name: Installers_retained_for_7_days, dtype: int64()
+
+Mean for Installers_retained_for_15_days()
+
+1.2010309278350515()
+
+Mode for Installers_retained_for_15_days()
+
+0    0
+Name: Installers_retained_for_15_days, dtype: int64()
+
+Mean for Installers_retained_for_30_days()
+
+1.0309278350515463()
+
+Mode for Installers_retained_for_30_days()
+
+0    0
+Name: Installers_retained_for_30_days, dtype: int64()
+
+#########File#########('/content/IN498-Capstone-in-Analytics/retained_installers_com.foo.bar_201911_country_parsed.csv',)
+
+Top 10 Rows()
+
+         Date Package_Name Country  Store_Listing_Visitors  Installers  \
+0  2019-11-01  com.foo.bar      AM                       1           1   
+1  2019-11-01  com.foo.bar     NaN                       3           1   
+2  2019-11-01  com.foo.bar      CA                       9           5   
+3  2019-11-01  com.foo.bar      DE                       4           1   
+4  2019-11-01  com.foo.bar      ES                       2           0   
+5  2019-11-01  com.foo.bar      FR                       1           0   
+6  2019-11-01  com.foo.bar      GB                       4           3   
+7  2019-11-01  com.foo.bar      ID                       1           0   
+8  2019-11-01  com.foo.bar      IN                       3           1   
+9  2019-11-01  com.foo.bar      IT                       1           0   
+
+   Visitor-to-Installer_conversion_rate  Installers_retained_for_1_day  \
+0                                 1.000                              0   
+1                                 0.333                              0   
+2                                 0.556                              5   
+3                                 0.250                              0   
+4                                 0.000                              0   
+5                                 0.000                              0   
+6                                 0.750                              2   
+7                                 0.000                              0   
+8                                 0.333                              0   
+9                                 0.000                              0   
+
+   Installer-to-1_day_retention_rate  Installers_retained_for_7_days  \
+0                              0.000                               0   
+1                              0.000                               0   
+2                              1.000                               5   
+3                              0.000                               0   
+4                              0.000                               0   
+5                              0.000                               0   
+6                              0.667                               2   
+7                              0.000                               0   
+8                              0.000                               0   
+9                              0.000                               0   
+
+   Installer-to-7_days_retention_rate  Installers_retained_for_15_days  \
+0                               0.000                                0   
+1                               0.000                                0   
+2                               1.000                                5   
+3                               0.000                                0   
+4                               0.000                                0   
+5                               0.000                                0   
+6                               0.667                                2   
+7                               0.000                                0   
+8                               0.000                                0   
+9                               0.000                                0   
+
+   Installer-to-15_days_retention_rate  Installers_retained_for_30_days  \
+0                                0.000                                0   
+1                                0.000                                0   
+2                                1.000                                5   
+3                                0.000                                0   
+4                                0.000                                0   
+5                                0.000                                0   
+6                                0.667                                2   
+7                                0.000                                0   
+8                                0.000                                0   
+9                                0.000                                0   
+
+   Installer-to-30_days_retention_rate  
+0                                0.000  
+1                                0.000  
+2                                1.000  
+3                                0.000  
+4                                0.000  
+5                                0.000  
+6                                0.667  
+7                                0.000  
+8                                0.000  
+9                                0.000  ()
+
+Shape()
+
+(595, 14)()
+
+Description()
+
+              Date Package_Name Country  Store_Listing_Visitors  Installers  \
+count          595          595     589              595.000000  595.000000   
+unique          30            1     104                     NaN         NaN   
+top     2019-11-19  com.foo.bar      IN                     NaN         NaN   
+freq            27          595      30                     NaN         NaN   
+mean           NaN          NaN     NaN                7.969748    2.426891   
+std            NaN          NaN     NaN               26.349933    8.729914   
+min            NaN          NaN     NaN                1.000000    0.000000   
+25%            NaN          NaN     NaN                1.000000    0.000000   
+50%            NaN          NaN     NaN                1.000000    0.000000   
+75%            NaN          NaN     NaN                2.000000    1.000000   
+max            NaN          NaN     NaN              157.000000   58.000000   
+
+        Visitor-to-Installer_conversion_rate  Installers_retained_for_1_day  \
+count                             595.000000                     595.000000   
+unique                                   NaN                            NaN   
+top                                      NaN                            NaN   
+freq                                     NaN                            NaN   
+mean                                0.240067                       1.568067   
+std                                 0.355730                       5.807228   
+min                                 0.000000                       0.000000   
+25%                                 0.000000                       0.000000   
+50%                                 0.000000                       0.000000   
+75%                                 0.401500                       1.000000   
+max                                 1.000000                      37.000000   
+
+        Installer-to-1_day_retention_rate  Installers_retained_for_7_days  \
+count                          595.000000                      595.000000   
+unique                                NaN                             NaN   
+top                                   NaN                             NaN   
+freq                                  NaN                             NaN   
+mean                             0.243978                        1.243697   
+std                              0.405081                        4.605600   
+min                              0.000000                        0.000000   
+25%                              0.000000                        0.000000   
+50%                              0.000000                        0.000000   
+75%                              0.500000                        0.500000   
+max                              1.000000                       31.000000   
+
+        Installer-to-7_days_retention_rate  Installers_retained_for_15_days  \
+count                           595.000000                       595.000000   
+unique                                 NaN                              NaN   
+top                                    NaN                              NaN   
+freq                                   NaN                              NaN   
+mean                              0.204178                         1.112605   
+std                               0.373847                         4.148233   
+min                               0.000000                         0.000000   
+25%                               0.000000                         0.000000   
+50%                               0.000000                         0.000000   
+75%                               0.092500                         0.000000   
+max                               1.000000                        28.000000   
+
+        Installer-to-15_days_retention_rate  Installers_retained_for_30_days  \
+count                            595.000000                       595.000000   
+unique                                  NaN                              NaN   
+top                                     NaN                              NaN   
+freq                                    NaN                              NaN   
+mean                               0.179481                         0.919328   
+std                                0.354228                         3.437790   
+min                                0.000000                         0.000000   
+25%                                0.000000                         0.000000   
+50%                                0.000000                         0.000000   
+75%                                0.000000                         0.000000   
+max                                1.000000                        24.000000   
+
+        Installer-to-30_days_retention_rate  
+count                            595.000000  
+unique                                  NaN  
+top                                     NaN  
+freq                                    NaN  
+mean                               0.151629  
+std                                0.330259  
+min                                0.000000  
+25%                                0.000000  
+50%                                0.000000  
+75%                                0.000000  
+max                                1.000000  ()
+
+Counts()
+
+Date                                    595
+Package_Name                            595
+Country                                 589
+Store_Listing_Visitors                  595
+Installers                              595
+Visitor-to-Installer_conversion_rate    595
+Installers_retained_for_1_day           595
+Installer-to-1_day_retention_rate       595
+Installers_retained_for_7_days          595
+Installer-to-7_days_retention_rate      595
+Installers_retained_for_15_days         595
+Installer-to-15_days_retention_rate     595
+Installers_retained_for_30_days         595
+Installer-to-30_days_retention_rate     595
+dtype: int64()
+
+Mean for Installers_retained_for_1_day()
+
+1.5680672268907563()
+
+Mode for Installers_retained_for_1_day()
+
+0    0
+Name: Installers_retained_for_1_day, dtype: int64()
+
+Mean for Installers_retained_for_7_days()
+
+1.2436974789915967()
+
+Mode for Installers_retained_for_7_days()
+
+0    0
+Name: Installers_retained_for_7_days, dtype: int64()
+
+Mean for Installers_retained_for_15_days()
+
+1.1126050420168068()
+
+Mode for Installers_retained_for_15_days()
+
+0    0
+Name: Installers_retained_for_15_days, dtype: int64()
+
+Mean for Installers_retained_for_30_days()
+
+0.9193277310924369()
+
+Mode for Installers_retained_for_30_days()
+
+0    0
+Name: Installers_retained_for_30_days, dtype: int64()
+
+#########File#########('/content/IN498-Capstone-in-Analytics/retained_installers_com.foo.bar_201912_country_parsed.csv',)
+
+Top 10 Rows()
+
+         Date Package_Name Country  Store_Listing_Visitors  Installers  \
+0  2019/12/01  com.foo.bar      AU                       2           0   
+1  2019/12/01  com.foo.bar      BR                       1           0   
+2  2019/12/01  com.foo.bar      CA                       1           0   
+3  2019/12/01  com.foo.bar      DE                       1           0   
+4  2019/12/01  com.foo.bar      GB                       2           0   
+5  2019/12/01  com.foo.bar      IN                       5           0   
+6  2019/12/01  com.foo.bar      LB                       1           0   
+7  2019/12/01  com.foo.bar      MY                       2           0   
+8  2019/12/01  com.foo.bar      PH                       1           0   
+9  2019/12/01  com.foo.bar      PT                       1           0   
+
+   Visitor-to-Installer_conversion_rate  Installers_retained_for_1_day  \
+0                                   0.0                              0   
+1                                   0.0                              0   
+2                                   0.0                              0   
+3                                   0.0                              0   
+4                                   0.0                              0   
+5                                   0.0                              0   
+6                                   0.0                              0   
+7                                   0.0                              0   
+8                                   0.0                              0   
+9                                   0.0                              0   
+
+   Installer-to-1_day_retention_rate  Installers_retained_for_7_days  \
+0                                0.0                               0   
+1                                0.0                               0   
+2                                0.0                               0   
+3                                0.0                               0   
+4                                0.0                               0   
+5                                0.0                               0   
+6                                0.0                               0   
+7                                0.0                               0   
+8                                0.0                               0   
+9                                0.0                               0   
+
+   Installer-to-7_days_retention_rate  Installers_retained_for_15_days  \
+0                                 0.0                                0   
+1                                 0.0                                0   
+2                                 0.0                                0   
+3                                 0.0                                0   
+4                                 0.0                                0   
+5                                 0.0                                0   
+6                                 0.0                                0   
+7                                 0.0                                0   
+8                                 0.0                                0   
+9                                 0.0                                0   
+
+   Installer-to-15_days_retention_rate  Installers_retained_for_30_days  \
+0                                  0.0                                0   
+1                                  0.0                                0   
+2                                  0.0                                0   
+3                                  0.0                                0   
+4                                  0.0                                0   
+5                                  0.0                                0   
+6                                  0.0                                0   
+7                                  0.0                                0   
+8                                  0.0                                0   
+9                                  0.0                                0   
+
+   Installer-to-30_days_retention_rate  
+0                                  0.0  
+1                                  0.0  
+2                                  0.0  
+3                                  0.0  
+4                                  0.0  
+5                                  0.0  
+6                                  0.0  
+7                                  0.0  
+8                                  0.0  
+9                                  0.0  ()
+
+Shape()
+
+(601, 14)()
+
+Description()
+
+              Date Package_Name Country  Store_Listing_Visitors  Installers  \
+count          598          601     597              601.000000  601.000000   
+unique          31            1     114                     NaN         NaN   
+top     2019/12/07  com.foo.bar      US                     NaN         NaN   
+freq            28          601      31                     NaN         NaN   
+mean           NaN          NaN     NaN                8.069884    2.379368   
+std            NaN          NaN     NaN               28.097540    8.996064   
+min            NaN          NaN     NaN                1.000000    0.000000   
+25%            NaN          NaN     NaN                1.000000    0.000000   
+50%            NaN          NaN     NaN                1.000000    0.000000   
+75%            NaN          NaN     NaN                2.000000    1.000000   
+max            NaN          NaN     NaN              174.000000   60.000000   
+
+        Visitor-to-Installer_conversion_rate  Installers_retained_for_1_day  \
+count                             601.000000                     601.000000   
+unique                                   NaN                            NaN   
+top                                      NaN                            NaN   
+freq                                     NaN                            NaN   
+mean                                0.213065                       1.427621   
+std                                 0.359593                       5.566432   
+min                                 0.000000                       0.000000   
+25%                                 0.000000                       0.000000   
+50%                                 0.000000                       0.000000   
+75%                                 0.333000                       0.000000   
+max                                 1.000000                      36.000000   
+
+        Installer-to-1_day_retention_rate  Installers_retained_for_7_days  \
+count                          601.000000                      601.000000   
+unique                                NaN                             NaN   
+top                                   NaN                             NaN   
+freq                                  NaN                             NaN   
+mean                             0.175632                        1.116473   
+std                              0.361081                        4.442943   
+min                              0.000000                        0.000000   
+25%                              0.000000                        0.000000   
+50%                              0.000000                        0.000000   
+75%                              0.000000                        0.000000   
+max                              1.000000                       32.000000   
+
+        Installer-to-7_days_retention_rate  Installers_retained_for_15_days  \
+count                           601.000000                       601.000000   
+unique                                 NaN                              NaN   
+top                                    NaN                              NaN   
+freq                                   NaN                              NaN   
+mean                              0.135892                         0.956739   
+std                               0.319532                         3.834248   
+min                               0.000000                         0.000000   
+25%                               0.000000                         0.000000   
+50%                               0.000000                         0.000000   
+75%                               0.000000                         0.000000   
+max                               1.000000                        30.000000   
+
+        Installer-to-15_days_retention_rate  Installers_retained_for_30_days  \
+count                            601.000000                       601.000000   
+unique                                  NaN                              NaN   
+top                                     NaN                              NaN   
+freq                                    NaN                              NaN   
+mean                               0.124512                         0.792013   
+std                                0.307496                         3.223094   
+min                                0.000000                         0.000000   
+25%                                0.000000                         0.000000   
+50%                                0.000000                         0.000000   
+75%                                0.000000                         0.000000   
+max                                1.000000                        23.000000   
+
+        Installer-to-30_days_retention_rate  
+count                            601.000000  
+unique                                  NaN  
+top                                     NaN  
+freq                                    NaN  
+mean                               0.101120  
+std                                0.278907  
+min                                0.000000  
+25%                                0.000000  
+50%                                0.000000  
+75%                                0.000000  
+max                                1.000000  ()
+
+Counts()
+
+Date                                    598
+Package_Name                            601
+Country                                 597
+Store_Listing_Visitors                  601
+Installers                              601
+Visitor-to-Installer_conversion_rate    601
+Installers_retained_for_1_day           601
+Installer-to-1_day_retention_rate       601
+Installers_retained_for_7_days          601
+Installer-to-7_days_retention_rate      601
+Installers_retained_for_15_days         601
+Installer-to-15_days_retention_rate     601
+Installers_retained_for_30_days         601
+Installer-to-30_days_retention_rate     601
+dtype: int64()
+
+Mean for Installers_retained_for_1_day()
+
+1.4276206322795342()
+
+Mode for Installers_retained_for_1_day()
+
+0    0
+Name: Installers_retained_for_1_day, dtype: int64()
+
+Mean for Installers_retained_for_7_days()
+
+1.1164725457570714()
+
+Mode for Installers_retained_for_7_days()
+
+0    0
+Name: Installers_retained_for_7_days, dtype: int64()
+
+Mean for Installers_retained_for_15_days()
+
+0.956738768718802()
+
+Mode for Installers_retained_for_15_days()
+
+0    0
+Name: Installers_retained_for_15_days, dtype: int64()
+
+Mean for Installers_retained_for_30_days()
+
+0.7920133111480865()
+
+Mode for Installers_retained_for_30_days()
+
+0    0
+Name: Installers_retained_for_30_days, dtype: int64()
+
